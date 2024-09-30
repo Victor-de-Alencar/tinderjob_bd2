@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Match com Empresas{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Match com Desenvolvedores</h2>
+
+    {% if dev %}
+    <div class="card mt-4">
+        <div class="card-body text-center">
+            <h5 class="card-title">Nome: {{ dev.name }}</h5>
+            <p class="card-text">Habilidades: {{ dev.habilidades }}</p>
+            
+            <form method="POST" class="mt-3">
+                <button type="submit" name="match" class="btn btn-success">Dar Match</button>
+                <button type="submit" name="skip" class="btn btn-secondary">Pular</button>
+                <a href="{{ url_for('company_profile') }}" class="btn btn-primary">Voltar ao Perfil da Empresa</a>
+            </form>
+        </div>
+    </div>
+    {% else %}
+    <div class="mt-4">
+        <p>Não há mais Desenvolvedores disponíveis para avaliar.</p>
+    </div>
+    <a href="{{ url_for('company_profile') }}" class="btn btn-primary">Voltar ao Perfil da Empresa</a>
+    {% endif %}
+</div>
+{% endblock %}
