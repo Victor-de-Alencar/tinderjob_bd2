@@ -1,6 +1,6 @@
 # tinderjob_bd2
 
-**Aluno:** José Victor Rocha de Alencar
+**Aluno:** José Victor Rocha de Alencar <br>
 **Matrícula:** 2021000570
 
 
