@@ -1,6 +1,7 @@
 # tinderjob_bd2
 
-José Victor Rocha de Alencar
+**Aluno:** José Victor Rocha de Alencar
+**Matrícula:** 2021000570
 
 
 ## Objetivo do Sistema 
